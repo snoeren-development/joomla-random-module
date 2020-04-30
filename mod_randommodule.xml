@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+    type="module"
+    version="3.7"
+    client="site"
+    method="upgrade">
+    <name>MOD_RANDOMMODULE</name>
+    <version>1.0.0</version>
+    <creationDate>30-04-2020</creationDate>
+
+    <author>Snoeren Development</author>
+    <authorUrl>https://snoerendevelopment.nl/</authorUrl>
+    <authorEmail>info@snoerendevelopment.nl</authorEmail>
+
+    <description>MOD_RANDOMMODULE_DESC</description>
+    <copyright>Snoeren Development (c) 2020. All rights reserved.</copyright>
+    <license>MIT</license>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_randommodule.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_randommodule.sys.ini</language>
+    </languages>
+
+    <files>
+        <folder>tmpl</folder>
+
+        <filename module="mod_randommodule">mod_randommodule.php</filename>
+        <filename>model.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    type="sql"
+                    name="modules"
+                    label="MOD_RANDOMMODULE_OPTION_MODULES"
+                    description="MOD_RANDOMMODULE_OPTION_MODULES_DESC"
+                    multiple="true"
+                    sql_select="`id`, `title`"
+                    sql_from="#__modules"
+                    sql_where="client_id = 0 and module != 'mod_randommodule'"
+                    sql_order="title"
+                    key_field="id"
+                    value_field="title">
+                    <option value="all">JALL</option>
+                </field>
+            </fieldset>
+
+            <fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="3" />
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="1"
+					filter="integer">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					default="900"
+					filter="integer" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option value="itemid"></option>
+				</field>
+			</fieldset>
+        </fields>
+    </config>
+</extension>
