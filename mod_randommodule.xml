@@ -25,27 +25,20 @@
         <folder>tmpl</folder>
 
         <filename module="mod_randommodule">mod_randommodule.php</filename>
-        <filename>model.php</filename>
         <filename>index.html</filename>
     </files>
 
     <config>
         <fields name="params">
-            <fieldset name="basic">
+            <fieldset
+                name="basic"
+                addfieldpath="administrator/components/com_modules/models/fields">
                 <field
-                    type="sql"
-                    name="modules"
-                    label="MOD_RANDOMMODULE_OPTION_MODULES"
-                    description="MOD_RANDOMMODULE_OPTION_MODULES_DESC"
-                    multiple="true"
-                    sql_select="`id`, `title`"
-                    sql_from="#__modules"
-                    sql_where="client_id = 0 and module != 'mod_randommodule'"
-                    sql_order="title"
-                    key_field="id"
-                    value_field="title">
-                    <option value="all">JALL</option>
-                </field>
+                    name="position"
+                    type="modulesposition"
+                    label="MOD_RANDOMMODULE_OPTION_POSITION"
+                    description="MOD_RANDOMMODULE_OPTION_POSITION_DESC"
+                    required="true" />
             </fieldset>
 
             <fieldset name="advanced">
@@ -90,4 +83,13 @@
 			</fieldset>
         </fields>
     </config>
+
+    <updateservers>
+		<server
+            type="extension"
+            priority="2"
+            name="Random Module">
+            https://raw.githubusercontent.com/snoeren-development/joomla-random-module/master/updates.xml
+        </server>
+	</updateservers>
 </extension>
