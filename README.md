@@ -1,5 +1,6 @@
 # Random Module
 [![Software License](https://img.shields.io/github/license/snoeren-development/joomla-random-module?style=flat-square)](LICENSE)
+![GitHub All Releases](https://img.shields.io/github/downloads/snoeren-development/joomla-random-module/total?style=flat-square)
 [![Donate](https://img.shields.io/beerpay/snoeren-development/joomla-random-module?style=flat-square)](https://beerpay.io/snoeren-development/joomla-random-module)
 
 This Joomla! module shows a random module from a given (custom) position.
