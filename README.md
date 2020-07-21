@@ -10,7 +10,7 @@ This module requires at least PHP 7.2 and Joomla! 3.8.
 
 ## Usage
 [Download the module](https://github.com/snoeren-development/joomla-random-module/archive/master.zip) and install it directly on your Joomla! powered website. Simply create
-a new Random Module module and select the position the module should pick a module from.
+a new SD Random Module module and select the position the module should pick a module from.
 
 ## Credits
 - [Michael Snoeren](https://github.com/MSnoeren)

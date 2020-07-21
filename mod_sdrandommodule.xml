@@ -4,29 +4,38 @@
     version="3.7"
     client="site"
     method="upgrade">
-    <name>MOD_RANDOMMODULE</name>
-    <version>1.0.0</version>
+    <name>MOD_SDRANDOMMODULE</name>
+    <version>1.1.0</version>
     <creationDate>30-04-2020</creationDate>
 
     <author>Snoeren Development</author>
-    <authorUrl>https://snoerendevelopment.nl/</authorUrl>
+    <authorUrl>https://snoerendevelopment.com/</authorUrl>
     <authorEmail>info@snoerendevelopment.nl</authorEmail>
 
-    <description>MOD_RANDOMMODULE_DESC</description>
+    <description>MOD_SDRANDOMMODULE_DESC</description>
     <copyright>Snoeren Development (c) 2020. All rights reserved.</copyright>
     <license>MIT</license>
 
+    <scriptfile>install.php</scriptfile>
+
     <languages folder="language">
-        <language tag="en-GB">en-GB/en-GB.mod_randommodule.ini</language>
-        <language tag="en-GB">en-GB/en-GB.mod_randommodule.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_sdrandommodule.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_sdrandommodule.sys.ini</language>
     </languages>
 
     <files>
         <folder>tmpl</folder>
 
-        <filename module="mod_randommodule">mod_randommodule.php</filename>
+        <filename module="mod_sdrandommodule">mod_sdrandommodule.php</filename>
         <filename>index.html</filename>
     </files>
+
+    <media
+        folder="media"
+        destination="mod_sdrandommodule">
+        <file>sd-random-module-logo.png</file>
+        <file>index.html</file>
+    </media>
 
     <config>
         <fields name="params">
@@ -36,8 +45,8 @@
                 <field
                     name="position"
                     type="modulesposition"
-                    label="MOD_RANDOMMODULE_OPTION_POSITION"
-                    description="MOD_RANDOMMODULE_OPTION_POSITION_DESC"
+                    label="MOD_SDRANDOMMODULE_OPTION_POSITION"
+                    description="MOD_SDRANDOMMODULE_OPTION_POSITION_DESC"
                     required="true" />
             </fieldset>
 
@@ -89,7 +98,7 @@
             type="extension"
             priority="2"
             name="Random Module">
-            https://raw.githubusercontent.com/snoeren-development/joomla-random-module/master/updates.xml
+            https://snoerendevelopment.com/updates/sd-random-module.xml
         </server>
 	</updateservers>
 </extension>
