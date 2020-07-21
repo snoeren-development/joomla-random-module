@@ -27,4 +27,4 @@ $renderer = $document->loadRenderer('module');
 
 // Retrieve parameters and render the module.
 $moduleClassSuffix = htmlspecialchars($params->get('moduleclass_sfx', ''), ENT_COMPAT, 'UTF-8');
-require ModuleHelper::getLayoutPath('mod_randommodule', $params->get('layout', 'default'));
+require ModuleHelper::getLayoutPath('mod_sdrandommodule', $params->get('layout', 'default'));
