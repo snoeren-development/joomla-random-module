@@ -6,7 +6,7 @@ declare(strict_types = 1);
  * @version   1.1.0
  * @author    Snoeren Development
  * @copyright Snoeren Development (c) 2020
- * @license   MIT
+ * @license   GNU/GPLv3
  */
 
 defined('_JEXEC') or die;

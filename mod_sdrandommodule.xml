@@ -14,7 +14,7 @@
 
     <description>MOD_SDRANDOMMODULE_DESC</description>
     <copyright>Snoeren Development (c) 2020. All rights reserved.</copyright>
-    <license>MIT</license>
+    <license>GNU/GPLv3</license>
 
     <scriptfile>install.php</scriptfile>
 
