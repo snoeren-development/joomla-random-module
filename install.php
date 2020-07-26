@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 /**
  * @package   SD Random Module
- * @version   1.1.0
+ * @version   1.2.0
  * @author    Snoeren Development
  * @copyright Snoeren Development (c) 2020
  * @license   GNU/GPLv3
@@ -11,7 +11,7 @@ declare(strict_types = 1);
 
 defined('_JEXEC') or die;
 
-class mod_sdrandommoduleInstallerScript // phpcs:ignore
+class mod_sdrandomInstallerScript // phpcs:ignore
 {
     /**
      * Runs after installation.
@@ -44,7 +44,7 @@ class mod_sdrandommoduleInstallerScript // phpcs:ignore
     <div class="span1">&nbsp;</div>
     <div class="span3 col-md-4">
         <img
-            src="../media/mod_sdrandommodule/sd-random-module-logo.png"
+            src="../media/mod_sdrandom/sd-random-module-logo.png"
             alt="SD Random Module Logo"
             style="width:100%" />
     </div>

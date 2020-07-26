@@ -4,35 +4,35 @@
     version="3.7"
     client="site"
     method="upgrade">
-    <name>MOD_SDRANDOMMODULE</name>
-    <version>1.1.0</version>
+    <name>MOD_SDRANDOM</name>
+    <version>1.2.0</version>
     <creationDate>30-04-2020</creationDate>
 
     <author>Snoeren Development</author>
     <authorUrl>https://snoerendevelopment.com/</authorUrl>
     <authorEmail>info@snoerendevelopment.nl</authorEmail>
 
-    <description>MOD_SDRANDOMMODULE_DESC</description>
+    <description>MOD_SDRANDOM_DESC</description>
     <copyright>Snoeren Development (c) 2020. All rights reserved.</copyright>
     <license>GNU/GPLv3</license>
 
     <scriptfile>install.php</scriptfile>
 
     <languages folder="language">
-        <language tag="en-GB">en-GB/en-GB.mod_sdrandommodule.ini</language>
-        <language tag="en-GB">en-GB/en-GB.mod_sdrandommodule.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_sdrandom.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_sdrandom.sys.ini</language>
     </languages>
 
     <files>
         <folder>tmpl</folder>
 
-        <filename module="mod_sdrandommodule">mod_sdrandommodule.php</filename>
+        <filename module="mod_sdrandom">mod_sdrandom.php</filename>
         <filename>index.html</filename>
     </files>
 
     <media
         folder="media"
-        destination="mod_sdrandommodule">
+        destination="mod_sdrandom">
         <file>sd-random-module-logo.png</file>
         <file>index.html</file>
     </media>
@@ -45,8 +45,8 @@
                 <field
                     name="position"
                     type="modulesposition"
-                    label="MOD_SDRANDOMMODULE_OPTION_POSITION"
-                    description="MOD_SDRANDOMMODULE_OPTION_POSITION_DESC"
+                    label="MOD_SDRANDOM_OPTION_POSITION"
+                    description="MOD_SDRANDOM_OPTION_POSITION_DESC"
                     required="true" />
             </fieldset>
 

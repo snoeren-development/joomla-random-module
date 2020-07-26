@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 /**
  * @package   SD Random Module
- * @version   1.1.0
+ * @version   1.2.0
  * @author    Snoeren Development
  * @copyright Snoeren Development (c) 2020
  * @license   GNU/GPLv3
@@ -27,4 +27,4 @@ $renderer = $document->loadRenderer('module');
 
 // Retrieve parameters and render the module.
 $moduleClassSuffix = htmlspecialchars($params->get('moduleclass_sfx', ''), ENT_COMPAT, 'UTF-8');
-require ModuleHelper::getLayoutPath('mod_sdrandommodule', $params->get('layout', 'default'));
+require ModuleHelper::getLayoutPath('mod_sdrandom', $params->get('layout', 'default'));
